@@ -1,0 +1,100 @@
+:root{
+    /* ==== CSS Variables ====*/
+    
+    /* Primary */
+--Orange: hsl(25, 97%, 53%);
+    
+    /* Neutral */
+--White: hsl(0, 0%, 100%);
+--Light-Grey: 217, 12%, 63%;
+--Medium-Grey: 216, 12%, 54%;
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+    
+    /* Typography */
+--font-size-p: 15px;
+}
+body
+{
+    height: 100vh;
+    box-sizing: border-box;
+    font-size: var(--font-size-p);
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+}
+.br-radius-20{
+    border-radius: 20px;
+}
+.text-grey{
+    color: hsl(var(--Light-Grey));
+}
+.bg-grey{
+    background-color: hsla(var(--Light-Grey), 0.1);
+    line-height: 2.2;
+}
+.bg-grey:hover{
+    background-color: hsl(var(--Light-Grey));
+    color: var(--White);   
+}
+.bg-grey:active{
+    background-color: var(--Orange);
+}
+.star{
+    width: fit-content;
+    line-height: 1.2;
+}
+.card-bg{
+    /* background: radial-gradient(at 50% 0%, hsl(var(--Medium-Grey)), var(--Dark-Blue)); */
+    background-color: var(--Dark-Blue);
+}
+.card-w{
+    max-width: 420px;
+}
+.btn-orange{
+    background-color: var(--Orange);
+}
+.text-orange{
+    color: var(--Orange);
+}
+.rating-size{
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}
+.btn-rating{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+}
+.bg-rating
+{
+    background-color: var(--Light-Grey);
+}
+.w-fit-content
+{
+    width: fit-content;
+}
+.card:first-child(p){
+    width: fit-content;
+}
+button[type="submit"]{
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    color: var(--White);
+}
+button[type="submit"]:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+/* ==== Attribution ==== */
+.attribution 
+{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
