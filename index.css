@@ -51,6 +51,9 @@ body
 .card-w{
     max-width: 420px;
 }
+.card2{
+    display: none;
+}
 .btn-orange{
     background-color: var(--Orange);
 }
@@ -75,6 +78,7 @@ body
 .w-fit-content
 {
     width: fit-content;
+    line-height: 1.2;
 }
 .card:first-child(p){
     width: fit-content;
